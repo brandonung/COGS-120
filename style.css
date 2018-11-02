@@ -1,8 +1,9 @@
-body {
+/*body {
     font: 400 15px Roboto, sans-serif;
     line-height: 1.8;
     color: #2c3e50;
-}
+}*/
+
 h2 {
     font-size: 24px;
 
@@ -119,6 +120,47 @@ h4 {
     height: 15px;
     float: none;
     margin-left: 5px;
+}
+
+/* Chat containers */
+p.message {
+    border: 2px solid #4b4a4a;
+    background-color: #f1f1f1e1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Darker chat container */
+.message.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+/* Clear floats */
+.message::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img .message{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+/* Style time text */
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+    float: left;
+    color: #999;
 }
 
 /*  link */
