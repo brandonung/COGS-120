@@ -163,6 +163,18 @@ img .message{
     color: #999;
 }
 
+form {
+    display: inline-block;
+}
+
+.button {
+    background-color: rgba(52, 120, 175, 0.719);
+    border: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
 /*  link */
 a:link {
     color: #1a6fc4;
