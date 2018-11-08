@@ -1,12 +1,31 @@
-body{
-    display: flex;
-    align-items: center;
-}
-
 h1{
     text-align: center;
 }
 
-a {
-    font-size: 100px
+div.event{
+    font-size: 80;
+    text-align: center;
+    color: black;
 }
+
+div.events{
+    opacity: 0.2;
+}
+
+.box {
+    background-color:#3F48CC;
+    color:white;
+    font-weight:bold;
+    margin:120px auto;
+    height:150px;        
+    width: 200px;
+    padding: 10px;
+    vertical-align: top;
+  }
+  
+  .buttons{
+    padding-top: 20px;
+    color: black;
+    text-align: center; 
+  }
+  
