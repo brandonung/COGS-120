@@ -16,6 +16,9 @@ div.messageboard {
     border-color: lightgrey;
 }
 
+a.user {
+    color: #ffff;
+}
 
 /* Darker chat container */
 .message.darker {
@@ -35,6 +38,7 @@ img.message{
     height: 50px;
     float: left;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 /* Style time text */
