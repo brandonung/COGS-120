@@ -6,6 +6,9 @@ div.list {
     margin-top: 10px;
 }
 
+p {
+    font-weight: bold;
+}
 /* attendees images */
 .attendee_pic {
     width: 75px;
