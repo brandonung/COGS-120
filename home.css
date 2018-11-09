@@ -1,25 +1,19 @@
-#buttons{
-    color: black;
-    text-align: center; 
-    color: white;
-    background-color: rgb(60, 123, 204);
-}
-
 /* Chat containers */
 div.message {
     border: 2px solid #4b4a4a;
     background-color: #5fb5d6e1;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px ;
     font-weight: bold;
     color: #ffff;
 }
 
 div.messageboard {
     overflow: auto;
-    width: 600px;
     height: 500px;
+    border-style: solid;
+    border-color: lightgrey;
 }
 
 
@@ -49,8 +43,37 @@ img.message{
     color: #fff;
 }
 
-/* Style time text */
-.time-left {
-    float: left;
-    color: #999;
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close{
+    color:#aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus{
+    color:#000;
+    text-decoration: none;
+    cursor: pointer;
 }

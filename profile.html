@@ -24,7 +24,17 @@
     <br><h1>SD Comic-Con</h1>
     <input class="btn btn-primary" type="button" value="My Profile" onclick="goProfile();">
     &emsp;
-    <input class="btn btn-primary" type="button" value="Logout" onclick="logoutConfirm();">
+    <input class="btn btn-primary" type="button" value="Logout" onclick="showModal();">
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal();">&times;</span>
+            <form action="home.html">
+                Are you sure you want to logout?
+                <input type="button" value="Cancel" onclick="hideModal();">
+                <input type="button" value="OK" onclick="goLogin();">
+            </form>
+        </div>
+    </div>
   </header>
 
   <hr>
@@ -57,7 +67,24 @@
     </div>
   </div>
 
-
+  <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">M.E.H.</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li><a href="attendees.html">Attendees</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="help.html">Help/FAQ</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        </ul>
+    </div>
+  </nav>
+    
 
 
 

@@ -1,10 +1,5 @@
-function logoutConfirm() {
-    var txt;
-    if (confirm("Are you sure you want to logout?")) {
-        window.location="./login.html"
-    }
-    
-    document.getElementById("demo").innerHTML = txt;
+function goLogin() {
+    window.location="./login.html"
 }
 
 function goHome() {
