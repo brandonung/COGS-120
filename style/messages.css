@@ -31,13 +31,8 @@ img{ max-width:100%;}
   font-size: 21px;
   margin: 2px;
 }
-.srch_bar input{ border:1px solid #cdcdcd; border-width:0 0 1px 0; width:100%; background:white;}
-.srch_bar .input-group-addon button {
-  padding: 0;
-  color: #707070;
-  font-size: 18px;
-}
-.srch_bar .input-group-addon { margin: 0 0 0 -27px;}
+.srch_bar input{ border:2px solid #cdcdcd; border-width:0 0 1px 0; width:100%; background:white;}
+
 
 .chat_ib h5{ font-size:15px; color:#464646; margin:0 0 8px 0;}
 .chat_ib h5 span{ font-size:13px; float:right;}
