@@ -10,6 +10,10 @@ function goProfile() {
     window.location="./profile.html"
 }
 
+function goMessage() {
+    window.location="./messages.html"
+}
+
 function promptEventCode() {
     var code = prompt("Please enter your event code", "###-###")
     if (code) {
