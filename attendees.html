@@ -4,11 +4,12 @@
     <title>Attendees</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="attendees.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="./scripts/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,13 +25,15 @@
 
 <main>
   <h1>Attendees</h1>
-  <textarea style="width: 200px" rows= 1 name="Search">Search Attendee</textarea>
   <form action="attendees.html">
+    <input type=text name="Search" value="Search Attendee">
     <input class="button" type="submit" value="Search" />
   </form>
+
 <hr>
   <!-- Attendees list section-->
-  <div>
+  <div class="list">
+    <div>
     <p><img src="images/person.png" class="attendee_pic">
       <br>Name: John Doe<img src="images/inactive.jpg" class="status"><br>
       <form action="profile.html">
@@ -96,6 +99,7 @@
       </form>
       <br>
     </p>
+    </div>
   </div>
 </main>
 

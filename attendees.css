@@ -1,0 +1,33 @@
+div.list {
+    border-style: solid;
+    border-color: darkgray;
+    overflow: auto;
+    height: 500px;
+}
+
+/* attendees images */
+.attendee_pic {
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+
+.status {
+    width: 15px;
+    height: 15px;
+    float: none;
+    margin-left: 5px;
+}
+
+form {
+    display: inline-block;
+}
+
+
+.button {
+    background-color: rgba(52, 120, 175, 0.719);
+    border: black;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+}

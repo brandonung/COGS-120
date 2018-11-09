@@ -4,20 +4,59 @@
     <title>Profile</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="./scripts/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
+  
   <body>
 
+  <header>
+      <img src="images/house.png" width="100" height="100" usemap="home" style="float: left">
+      <map name="home">
+    <area shape="default" coords="0,0,100,100" href="home.html">
+    <br><h1>SD Comic-Con</h1>
+    <input class="btn btn-primary" type="button" value="My Profile" onclick="goProfile();">
+    &emsp;
+    <input class="btn btn-primary" type="button" value="Logout" onclick="logoutConfirm();">
+  </header>
+
+  <hr>
+
+  <div class="profile_main">
+      <img id="profile_pic" src="images/spiderman.jpg">
+      <span id="attendee_name">Spiderman</span>
+      <img src="images/active.png" class="status">
+      <input class="btn btn-primary" type="button" value="Message">
+  </div>
   
-<li><a href="index.html">Home</a></li>
-<li><a href="attendees.html">Attendees</a></li>
+  <div style="margin-left: 5px;">
+      <b>Age:</b> 15<br>
+      <b>Hometown:</b> Forest Hills, NY<br>
+      <b>Email:</b> sPeterman@aol.com<br>
+      <b>Phone:</b> --<br>
+      <b>Interests:</b> Spiders, Nanotechnology, Comic Books<br>
+  </div>
+  <hr>
+
+  <div>
+    <h2>Bio</h2>
+    <div id="bio">
+      <p>
+          Just your friendly neighborhood Spiderman.
+          I love swinging (hehe), and I hate crime.
+          With great power comes great responsibility. <br>
+          R.I.P. Uncle Ben, you a real one.
+      </p>
+    </div>
+  </div>
+
 
 
 

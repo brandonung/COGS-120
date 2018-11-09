@@ -1,0 +1,30 @@
+#profile_pic {
+    width: 125px;
+    height: 125px;
+    float: left;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.profile_main {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+#attendee_name {
+    font-size: 50px;
+}
+
+#bio {
+    border-style: solid;
+    width: 500px;
+    padding: 5px;
+}
+.status {
+    width: 25px;
+    height: 25px;
+    float: none;
+    margin: 10px;
+}
