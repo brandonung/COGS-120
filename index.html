@@ -19,7 +19,17 @@
      <header>
         <input class="btn btn-primary" type="button" value="My Profile" onclick="goProfile();">
         &emsp;
-        <input class="btn btn-primary" type="button" value="Logout" onclick="logoutConfirm();" />
+        <input class="btn btn-primary" type="button" value="Logout" onclick="showModal();">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="hideModal();">&times;</span>
+                <form action="home.html">
+                    Are you sure you want to logout?
+                    <input type="button" value="Cancel" onclick="hideModal();">
+                    <input type="button" value="OK" onclick="goLogin();">
+                </form>
+            </div>
+        </div>
         <h1>EVENTS</h1>
      </header>
 

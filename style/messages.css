@@ -33,7 +33,6 @@ img{ max-width:100%;}
 }
 .srch_bar input{ border:1px solid #cdcdcd; border-width:0 0 1px 0; width:100%; background:white;}
 .srch_bar .input-group-addon button {
-  border: solid small;
   padding: 0;
   color: #707070;
   font-size: 18px;
