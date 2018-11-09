@@ -3,6 +3,7 @@ div.list {
     border-color: darkgray;
     overflow: auto;
     height: 500px;
+    margin-top: 10px;
 }
 
 /* attendees images */
