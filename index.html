@@ -48,14 +48,23 @@
                         </form>
                     </div>
                 </div>
-                <img src="images/SDCC2018-head.jpg" id="myBtn" onclick="promptEventCode();" style="width:400px; height:160px"/>
-                    
+                <img src="images/SDCC2018-head.jpg" id="myBtn" onclick="promptEventCode();" style="width:400px; height:160px"/>  
             </p>
         </div>
 
         <div class="event">
             <b>AllCal 2018: Telluride</b>
             <p>
+                <div id="eventModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="hideEventCode();">&times;</span>
+                            <form id="eventForm">
+                                Please enter event code:
+                                <input type="text" id="ecode" value="xxx-xxx">
+                                <input type="submit" value="Submit" onclick="validateCode();">
+                            </form>
+                        </div>
+                    </div>
                 <img src="images/AllCAL2018Cvr.jpg" style="width:400px; height:160px"/>
             </p>
         </div>
