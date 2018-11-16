@@ -1,3 +1,6 @@
+var messages = [];
+
+
 function appendMsg() {
     var node = document.createElement("DIV");
     var pg = document.createElement("P");
@@ -7,4 +10,26 @@ function appendMsg() {
     pg.appendChild(textnode);
     node.appendChild(pg);
     document.getElementById("chatBody").appendChild(node);
+    document.getElementById("newMsg").value='';
+  //  messages.push(text);
+  //  localStorage.setItem("messages", JSON.stringify(messages));
 }
+
+/*function loadMessages() {
+    if (localStorage.getItem("messages") !== null) {
+        var stored_msgs = JSON.parse(localStorage.getItem("messages"));
+        
+        for(i=0; i<stored_msgs.length; i++) {
+            var node = document.getElementById("DIV");
+            var pg = document.createElement("P");
+            node.setAttribute("class", "outgoing_msg sent_msg");
+            pg.appendChild(stored_msgs[i]);
+            node.appendChild(pg);
+            document.getElementById("chatBody").appendChild(node);
+            document.getElementById("newMsg").value='';
+        }
+    
+    } else {
+        return;
+    }
+}*/
