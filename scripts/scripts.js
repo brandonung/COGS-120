@@ -4,8 +4,12 @@ function goLogin() {
     window.location="./login.html"
 }
 
-function goHome() {
+function goIndex() {
     window.location="./index.html"
+}
+
+function goHome() {
+    window.location="./home.html"
 }
 
 function goProfile() {
@@ -17,7 +21,7 @@ function goMessage() {
 }
 
 // functions to prompt and hide the event code popup
-function promptEventCode() {
+/*function promptEventCode() {
     var modal = document.getElementById('eventModal');
     modal.style.display = "block";
 
@@ -29,12 +33,13 @@ function hideEventCode() {
 }
 
 function validateCode() {
-    var input = document.getElementById("ecode");
-    if (input.value === "123-456") {
-        alert("Valid code entered!");
-        window.location="./home.html";
+    var event = document.getElementById("eventForm");
+    if (event.password.value === "123-456") {
+        alert("Valid Code");
+    } else {
+        alert("Invalid Code");
     }
-}
+}*/
 
 // functions to prompt and hide the logout confirmation
 function showModal() {
