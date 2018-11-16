@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style/home.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="./scripts/scripts.js"></script>
+    <script type="text/javascript" src="./scripts/home.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,27 +42,12 @@
 
 <hr>
   <h2>Message Board</h2>
-  <div class="messageboard">
-
-    <div class="message">
-      <p><img src="images/person.png" onclick="goProfile('allcal');" class="message">
-      <a class="user" href="profile.html">John Doe</a>: Check out the booth in north west corner!
-    <span class="time-right">11:00AM</span>
-      </p>
-    </div>
-
+  <div class="messageboard" id="msgboard">
       
     <div class="message">
       <p><img src="images/barney.jpg" onclick="goProfile('allcal');" class="message">
         <a class="user" href="profile.html">Barney</a>: Come take pictures with me please!
         <span class="time-right">12:13PM</span>
-      </p>
-    </div>
-    
-    <div class="message">
-      <p><img src="images/mjwatson.jpg" onclick="goProfile('allcal');" class="message">
-        <a class="user" href="profile.html">Mary Jane</a>: Does anyone want to grab lunch?
-        <span class="time-right">1:15PM</span>
       </p>
     </div>
     
@@ -91,6 +77,13 @@
         <a class="user" href="profile.html">Project Flex</a>: AFTER PARTY at *address* !!
         <span class="time-right">8:44PM</span>
       </p>
+    </div>
+  </div>
+
+  <div class="type_msg">
+    <div class="input_msg_write">
+      <input type="text" class="write_msg" placeholder="Type a message" id="newMsg"/>
+      <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true" onclick="appendMsg();"></i></button>
     </div>
   </div>
 </body>
