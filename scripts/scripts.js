@@ -12,8 +12,12 @@ function goHome() {
     window.location="./home.html"
 }
 
-function goProfile() {
-    window.location="./profile.html"
+function goProfile(event) {
+    if (event == "sdcc") {
+        window.location="./profile.html"    
+    } else if (event == "allcal") {
+        window.location="./profileAllCal.html"
+    }  
 }
 
 function goMessage() {
