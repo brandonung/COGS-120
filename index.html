@@ -9,11 +9,12 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="./scripts/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
+</head>
   
      
      <header>
@@ -37,17 +38,17 @@
          <div class="event">
             <b>SD Comic-Con</b>
             <p>
-                <div id="myModal" class="modal">
+                <div id="eventModal" class="modal">
                     <div class="modal-content">
-                        <span class="close" onclick="hideModal();">&times;</span>
-                        <form action="home.html">
+                        <span class="close" onclick="hideEventCode();">&times;</span>
+                        <form id="eventForm">
                             Please enter event code:
-                            <input type="text" name="ecode" value="xxx-xxx">
-                            <input type="submit" value="Submit">
+                            <input type="text" id="ecode" value="xxx-xxx">
+                            <input type="submit" value="Submit" onclick="validateCode();">
                         </form>
                     </div>
                 </div>
-                <img src="images/SDCC2018-head.jpg" id="myBtn" onclick="showModal();" style="width:400px; height:160px"/>
+                <img src="images/SDCC2018-head.jpg" id="myBtn" onclick="promptEventCode();" style="width:400px; height:160px"/>
                     
             </p>
         </div>
