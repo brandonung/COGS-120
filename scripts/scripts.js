@@ -17,6 +17,8 @@ function goProfile(event) {
         window.location="./profile.html"    
     } else if (event == "allcal") {
         window.location="./profileAllCal.html"
+    } else if (event == "spiderman") {
+        window.location="./spiderman.html"
     }  
 }
 
