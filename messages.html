@@ -10,6 +10,7 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/messages.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -59,7 +60,7 @@
         </div>
       </div>
       <div class="mesgs">
-        <div class="msg_history">
+        <div class="msg_history" id="chatBody">
           <div class="incoming_msg">
             <div class="incoming_msg_img"> <img src="images/spiderman.jpg" alt="spidey"> </div>
             <div class="received_msg">
@@ -77,13 +78,13 @@
         </div>
         <div class="type_msg">
           <div class="input_msg_write">
-            <input type="text" class="write_msg" placeholder="Type a message" />
-            <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+            <input type="text" class="write_msg" placeholder="Type a message" id="newMsg"/>
+            <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true" onclick="appendMsg();"></i></button>
           </div>
         </div>
       </div>
     </div>
-    
+  </div>
     
     <p class="text-center top_spac"> Design by <a target="_blank" href="#">Sunil Rajput</a></p>
 
@@ -104,7 +105,7 @@
       </div>
     </nav>
     
-  </div></div>
+  </div>
 
 
 
