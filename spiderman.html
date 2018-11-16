@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/profile.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="./scripts/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  
+  <body>
+
+  <header>
+      <img src="images/sdcc-logo.png" width="100" height="100" usemap="home" style="float: left">
+      <map name="home">
+    <area shape="default" coords="0,0,100,100" href="home.html">
+    <br><h1>SD Comic-Con</h1>
+    <input class="btn btn-primary" type="button" value="My Profile" onclick="goProfile();">
+    &emsp;
+    <input class="btn btn-primary" type="button" value="Logout" onclick="showModal();">
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal();">&times;</span>
+            <form action="home.html">
+                Are you sure you want to logout?
+                <input type="button" value="Cancel" onclick="hideModal();">
+                <input type="button" value="OK" onclick="goLogin();">
+            </form>
+        </div>
+    </div>
+  </header>
+
+  <hr>
+
+  <div class="profile_main">
+      <img id="profile_pic" src="images/spiderman.jpg">
+      <span id="attendee_name">Spiderman</span>
+      <img src="images/active.png" class="status">
+      <input class="btn btn-primary" type="button" value="Message" onclick="goMessage();">
+  </div>
+  
+  <div style="margin-left: 5px;">
+      <b>Age:</b> 16<br>
+      <b>Hometown:</b> Forest Hills, NY<br>
+      <b>Email:</b> peter_parker@aol.com<br>
+      <b>Phone:</b> --<br>
+      <b>Interests:</b> Spiders, Fighting Crime, Comic Books, Flies for Dinner<br>
+  </div>
+  <hr>
+
+  <div>
+    <h2>Bio</h2>
+    <div id="bio">
+      <p>
+          Don't let me catch you slippin. 
+          With great power comes great responsibility. <br>
+          R.I.P. Uncle Ben, you a real one.
+      </p>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">M.E.H.</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li><a href="attendees.html">Attendees</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="help.html">Help/FAQ</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        </ul>
+    </div>
+  </nav>
+    
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
