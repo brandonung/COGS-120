@@ -19,7 +19,9 @@ function goProfile(event) {
         window.location="./profileAllCal.html"
     } else if (event == "spiderman") {
         window.location="./spiderman.html"
-    }  
+    }  else if (event == "acspiderman") {
+        window.location == "./spidermanAllCal.html"
+    }
 }
 
 function goMessage() {
