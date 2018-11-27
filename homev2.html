@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>COGS 120 A4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/homev2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
+    <script type="text/javascript" src="./scripts/homev2.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+<body>
+
+
+<header>
+    <img src="images/sdcc-logo.png" width="100" height="100" usemap="home" style="float: left">
+    <map name="home">
+  <area shape="default" coords="0,0,100,100" href="index.html">
+  <br><h1>SD Comic-Con</h1>
+
+  <hr>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Events Page</a>
+    <a href="home.html">Message Board</a>
+    <a href="attendees.html">Attendees</a>
+    <a href="messages.html">Messages</a>
+    <a onclick="return showModal();" style="float: right; cursor: pointer;"><span class="glyphicon glyphicon-log-in"></span> Logout</a>
+    <a href="profile.html" style="float: right"><span class="glyphicon glyphicon-user"></span> Profile</a>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal();">&times;</span>
+            <form action="home.html">
+                Are you sure you want to logout?
+                <input type="button" value="Cancel" onclick="hideModal();">
+                <input type="button" value="OK" onclick="goLogin();">
+            </form>
+        </div>
+    </div>
+  </div>
+  
+</header>
+
+<hr>
+  <h2>Message Board</h2>
+  <div class="messageboard" id="msgboard">
+      
+    <div class="message">
+      <p><img src="images/barney.jpg" onclick="goProfile('sdcc');" class="message">
+        <a class="user" href="profile.html">Barney</a>: Come take pictures with me please!
+        <span class="time-right">12:13PM</span>
+      </p>
+    </div>
+    
+    <div class="message">
+      <p><img src="images/spiderman.jpg" onclick="goProfile('spiderman');" class="message">
+        <a class="user" href="spiderman.html">Spiderman</a>: This event is AWESOMEEEE!
+        <span class="time-right">3:24PM</span>
+      </p>
+    </div>
+
+    <div class="message">
+      <p><img src="images/person.png" onclick="goProfile('sdcc');" class="message">
+        <a class="user" href="profile.html">Justice Beaver</a>: Game of Thrones is having a panel right now. Come by.
+        <span class="time-right">4:45PM</span>
+      </p>
+    </div>
+
+    <div class="message">
+      <p><img src="images/boyardee.jpg" onclick="goProfile('sdcc');" class="message">
+        <a class="user" href="profile.html">Chef Boyardee</a>: Great food near the main entrance. Pasta.
+        <span class="time-right">5:53PM</span>
+      </p>
+    </div>
+
+    <div class="message">
+      <p><img src="images/person.png" onclick="goProfile('sdcc');" class="message">
+        <a class="user" href="profile.html">Project Flex</a>: AFTER PARTY at *address* !!
+        <span class="time-right">8:44PM</span>
+      </p>
+    </div>
+  </div>
+  
+  <div class="type_msg">
+    <div class="input_msg_write">
+      <input type="text" class="write_msg" placeholder="Type a message" id="newMsg"/>
+      <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true" onclick="appendMsg();"></i></button>
+    </div>
+  </div>
+</body>
+
+
+
+
+
+  </body>
+</html>
