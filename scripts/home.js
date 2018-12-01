@@ -1,3 +1,10 @@
+$(document).ready(function(){
+    $('#newMsg').keypress(function(e){
+      if(e.which==13)
+      $('#msgSendBtn').click();
+    });
+});
+
 function appendMsg() {
     var node = document.createElement("DIV");
     var pg = document.createElement("P");
