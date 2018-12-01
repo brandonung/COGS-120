@@ -1,3 +1,15 @@
+$(document).ready(function(){
+    $('#uname').keypress(function(e){
+      if(e.which==13)
+      $('#submitCreds').click();
+    });
+
+    $('#pw').keypress(function(e){
+        if(e.which==13)
+        $('#submitCreds').click();
+      });
+});
+
 function validateCreds() {
     event = document.getElementById("login");
     user = document.getElementById("uname");
