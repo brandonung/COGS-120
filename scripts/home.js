@@ -11,6 +11,7 @@ function appendMsg() {
     var profpic = document.createElement("IMG");
     var piclink = document.createElement("A");
     var currtime = document.createElement("SPAN");
+    var board = document.getElementById("msgboard");
 
     node.setAttribute("class", "message");
     var input = document.getElementById("newMsg");
@@ -37,8 +38,10 @@ function appendMsg() {
     startTime(currtime);
 
     node.appendChild(pg);
-    document.getElementById("msgboard").appendChild(node);
+    board.appendChild(node);
     document.getElementById("newMsg").value='';
+
+    board.scrollTop = board.scrollHeight;
   //  messages.push(text);
   //  localStorage.setItem("messages", JSON.stringify(messages));
 }

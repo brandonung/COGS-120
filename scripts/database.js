@@ -1,13 +1,18 @@
-var userProfiles = [
-    {'name': 'Spiderman', 'profilePic': 'images/spiderman.jpg', 'index': 1},
-    {'name': 'Barney', 'profilePic': 'images/barney.jpg', 'index': 2},
-    
-]
+var addToChatBody = document.getElementById("msgSendBtn");
+var newMsg = document.getElementById("newMsg");
+var chatBody = document.getElementById("chatBody");
 
-var messageBoard = {
+addToChatBody.addEventListener('click', function(event) {
+    event.preventDefault();
 
-}
+    chatBody.innerHTML += newMsg;
 
-var messages = {
-    
+    localStorage.setItem('chatMsgs', chatBody.innerHTML);
+
+}, false);
+
+var saved = localStorage.getItem('chatMsgs');
+
+if (saved) {
+    chadBody.innerHTML = saved;
 }

@@ -1,4 +1,14 @@
-var messages = [];
+/*window.onload = function() {
+    var messages = document.getElementById("chatBody");
+
+    if (sessionStorage.getItem("autosave")) {
+        messages.value = sessionStorage.getItem("autosave");
+    }
+
+    messages.addEventListener("change", function() {
+        sessionStorage.setItem("autosave", messages.value);
+    });
+}*/
 
 $(document).ready(function(){
     $('#newMsg').keypress(function(e){
@@ -12,6 +22,7 @@ function appendMsg() {
     var inner = document.createElement("DIV");
     var pg = document.createElement("P");
     var currtime = document.createElement("SPAN");
+    var chat = document.getElementById("chatBody");
 
     node.setAttribute("class", "outgoing_msg");
     inner.setAttribute("class", "sent_msg");
@@ -26,8 +37,10 @@ function appendMsg() {
 
     startTime(currtime);
 
-    document.getElementById("chatBody").appendChild(node);
+    chat.appendChild(node);
     document.getElementById("newMsg").value='';
+
+    chat.scrollTop = chat.scrollHeight;
 }
 
 function checkTime(i) {
@@ -55,3 +68,4 @@ function startTime(currtime) {
       startTime()
     }, 500);
 }
+
