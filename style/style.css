@@ -253,27 +253,30 @@ a:active {
     background-color: #f4511e;
     color: #fff;
 }
-.navbar {
-    background-color: #ecf0f1;
-    padding: 25px 45px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-family: Roboto, sans-serif;
-    font-size: 15px;
-    font-weight: 1.8;
-    letter-spacing: 1px;
+
+.topnav {
+overflow: hidden;
+background-color: #333;
 }
 
-.navbar .navbar-brand {
-    color: #2c3e50 !important;
-    font-size: 1.8em;
-    font-weight: 600;
-
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
 }
 
-.navbar-nav li a:hover {
-color: #2c3e50 !important;
+.topnav a:hover {
+background-color: rgb(40, 216, 84);
+color: black;
+}
+
+
+.topnav .icon {
+display: none;
 }
 
 .btn.sharp {

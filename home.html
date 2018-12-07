@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style/home.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
@@ -25,18 +26,26 @@
     <map name="home">
   <area shape="default" coords="0,0,100,100" href="index.html">
   <br><h1>SD Comic-Con</h1>
-  <input class="btn btn-primary" type="button" value="My Profile" onclick="goProfile('sdcc');">
-  &emsp;
-  <input class="btn btn-primary" type="button" value="Logout" onclick="showModal();">
-  <div id="myModal" class="modal">
-      <div class="modal-content">
-          <span class="close" onclick="hideModal();">&times;</span>
-          <form action="home.html">
-              Are you sure you want to logout?
-              <input type="button" value="Cancel" onclick="hideModal();">
-              <input type="button" value="OK" onclick="goLogin();">
-          </form>
-      </div>
+  
+  <hr>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Events Page</a>
+    <a href="home.html">Message Board</a>
+    <a href="attendees.html">Attendees</a>
+    <a href="messages.html">Messages</a>
+    <a onclick="return showModal();" style="float: right; cursor: pointer;"><span class="glyphicon glyphicon-log-in"></span> Logout</a>
+    <a href="profile.html" style="float: right"><span class="glyphicon glyphicon-user"></span> Profile</a>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal();">&times;</span>
+            <form action="home.html">
+                Are you sure you want to logout?
+                <input type="button" value="Cancel" onclick="hideModal();">
+                <input type="button" value="OK" onclick="goLogin();">
+            </form>
+        </div>
+    </div>
   </div>
 </header>
 
@@ -88,24 +97,4 @@
   </div>
 </body>
 
-
-
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">M.E.H.</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="home.html">Home</a></li>
-      <li><a href="attendees.html">Attendees</a></li>
-      <li><a href="messages.html">Messages</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-        <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-      </ul>
-  </div>
-</nav>
-
-  </body>
 </html>
